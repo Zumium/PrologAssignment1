@@ -63,7 +63,7 @@ calculate(List1,List2,List3,[LH|List],Value) :-
 
 solved(0).
 solve([List1,List2,List3]) :-
-	assign_number(List1,[0,1,2,3,4,5,6,7,8,9],Rests1),
+	assign_number(List1,[9,8,7,6,5,4,3,2,1,0],Rests1),
 	assign_number(List2,Rests1,Rests2),
 	assign_number(List3,Rests2,_),
 	list_to_set(List1,ListSet1),
